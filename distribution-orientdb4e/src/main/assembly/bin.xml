@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly>
+
+    <id>distribution</id>
+
+    <formats>
+        <format>dir</format>
+        <format>tar.gz</format>
+        <format>zip</format>
+    </formats>
+
+    <fileSets>
+        <fileSet>
+            <directory>${project.build.directory}/orientdb-community-${project.version}</directory>
+            <outputDirectory></outputDirectory>
+        </fileSet>
+        <fileSet>
+            <directory>${project.build.directory}/orientdb-teleporter</directory>
+            <outputDirectory></outputDirectory>
+        </fileSet>
+    </fileSets>
+    
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>*:jar:*</include>
+            </includes>
+            <excludes>
+                <exclude>com.orientechnologies:orientdb-neo4j-importer-plugin:*</exclude>
+                <exclude>*:ant:*</exclude>
+                <exclude>*:ant-launcher:*</exclude>
+                <exclude>*:ivy:*</exclude>
+            </excludes>
+        </dependencySet>
+        <dependencySet>
+            <outputDirectory>plugins</outputDirectory>
+            <includes>
+                <include>com.orientechnologies:orientdb-neo4j-importer-plugin:*</include>
+            </includes>
+        </dependencySet>
+
+    </dependencySets>
+
+</assembly>

@@ -12,6 +12,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>distribution-orientdb</module>
+        <module>distribution-orientdb4e</module>
     </modules>
 
     <build>
