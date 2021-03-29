@@ -13,10 +13,21 @@
         <fileSet>
             <directory>${project.build.directory}/orientdb-community-${project.version}</directory>
             <outputDirectory></outputDirectory>
+            <excludes>
+                <exclude>*:security.json:*</exclude>
+            </excludes>
         </fileSet>
         <fileSet>
             <directory>${project.build.directory}/orientdb-teleporter</directory>
             <outputDirectory></outputDirectory>
+        </fileSet>
+        <fileSet>
+            <directory>${basedir}/config</directory>
+            <includes>
+                <include>*.json</include>
+            </includes>
+            <outputDirectory>config</outputDirectory>
+
         </fileSet>
     </fileSets>
     
@@ -39,7 +50,14 @@
                 <include>com.orientechnologies:orientdb-neo4j-importer-plugin:*</include>
             </includes>
         </dependencySet>
-
+        
     </dependencySets>
+
+    <files>
+        <file>
+            <source>${basedir}/config/security.json</source>
+            <outputDirectory>config</outputDirectory>
+        </file>
+    </files>
 
 </assembly>
