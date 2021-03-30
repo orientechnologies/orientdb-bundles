@@ -37,7 +37,7 @@
   },
   "passwordValidator" : {
     "class"                : "com.orientechnologies.security.password.ODefaultPasswordValidator",
-    "minimumLength"        : 5,
+    "minimumLength"        : 6,
     "numberRegEx"        : "(?:[0-9].*){1}",
     "uppercaseRegEx"    : "(?:[A-Z].*){1}",
     "specialRegEx"        : "(?:[^a-zA-Z0-9 ].*){1}"
