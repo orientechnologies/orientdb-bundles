@@ -15,6 +15,7 @@
             <outputDirectory></outputDirectory>
             <excludes>
                 <exclude>*:security.json:*</exclude>
+                <exclude>*:orientdb-server-config.xml:*</exclude>
             </excludes>
         </fileSet>
         <fileSet>
@@ -25,6 +26,7 @@
             <directory>${basedir}/config</directory>
             <includes>
                 <include>*.json</include>
+                <include>*.xml</include>
             </includes>
             <outputDirectory>config</outputDirectory>
 
@@ -56,6 +58,10 @@
     <files>
         <file>
             <source>${basedir}/config/security.json</source>
+            <outputDirectory>config</outputDirectory>
+        </file>
+        <file>
+            <source>${basedir}/config/orientdb-server-config.xml</source>
             <outputDirectory>config</outputDirectory>
         </file>
     </files>
