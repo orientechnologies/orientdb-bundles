@@ -8,11 +8,9 @@
         <relativePath/>
     </parent>
     <artifactId>orientdb-bundles</artifactId>
-    <version>3.2.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
         <module>distribution-orientdb</module>
-        <module>distribution-orientdb4e</module>
     </modules>
 
     <build>
