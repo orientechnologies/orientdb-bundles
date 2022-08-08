@@ -7,7 +7,7 @@
         <relativePath />
     </parent>
     <artifactId>orientdb-bundles</artifactId>
-    <version>3.0.44-SNAPSHOT</version>
+    <version>3.0.44</version>
     <packaging>pom</packaging>
     <modules>
         <module>distribution-orientdb</module>
